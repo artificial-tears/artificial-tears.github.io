@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-attachment: fixed;
+    background-color: black;
+    background-image: url('../assets/FrontPage/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Helvetica Neue';
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-white {
+    color: #C5C5C5;
+}
+
+.second-grey {
+    color: #767676;
+}
+
+.third-dark {
+    color: #161616;
+}
+
+.content {
+    padding: 4em;
+}
+
+.title {
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    margin-top: 1em;
+}
+
+.subtitle {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sublink a {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 0 0.8em;
+    text-decoration: none;
+}
+
+.contact {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 2em 0;
+}
