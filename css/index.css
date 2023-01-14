@@ -2,16 +2,10 @@ html, body {
     background-color: black;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100%;
     font-family: 'Helvetica Neue';  
 }
 
 .page {
-    position: relative;
-}
-
-.bgimg {
     background-attachment: fixed;
     background-image: url('../assets/FrontPage/background.png');
     background-repeat: no-repeat;
@@ -19,31 +13,33 @@ html, body {
     display: flex;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: relative;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     object-fit: cover;
     z-index: 1;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-
-    -webkit-animation: fadeout 3s ; /* Chrome, Safari, Opera */
-    animation: fadeout 3s ;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes fadeout {
-    from {opacity: 1;}
-    to {opacity: 0;}
-  }
+#bgimg {
+    display: flex;
+}
 
-/* Standard syntax */
-@keyframes fadeout {
-    from {opacity: 1;}
-    to {opacity: 0;}
+#bgimg img {
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fadeInBg {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .main-white {
@@ -59,14 +55,14 @@ html, body {
 }
 
 .content {
-    height: 100vh;
-    padding: 4em 0 0 4em;
+    height: auto;
+    padding: 3em 0 0 4em;
     position: absolute;
     z-index: 100;
 }
 
 .title {
-    font-size: 4em;
+    font-size: 3em;
     font-style: italic;
     font-weight: 700;
     margin: 0;
@@ -75,32 +71,36 @@ html, body {
 
 .section {
     margin-top: 1em;
+    letter-spacing: 1.5px;
 }
 
 .subtitle {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
     margin: 0;
 }
 
 .sublink a {
+    color:#C5C5C5;
     display: block;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.8em;
+    font-weight: 600;
     margin: 0 0 0 0.8em;
     text-decoration: none;
 }
 
-.contact {
-    font-size: 2em;
-    font-weight: 700;
-    margin: 2em 0;
-    object-fit: cover;
+.sublink a:hover {
+    color: #767676;
 }
+
 
 .footer {
     display: flex;
     justify-content: flex-end;
-    padding: 6em 0 2em 0;
+    padding: 12em 0 0 2em;
     width: 90vw;
+}
+
+.footer img {
+    width: 10em;
 }
