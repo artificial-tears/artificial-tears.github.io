@@ -1,0 +1,118 @@
+.page {
+    padding: 4em 8em;
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.list, .brand {
+    flex: 1;
+}
+
+.brand {
+    margin-left: 4em;
+}
+
+#subtitle {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.worktitle {
+    display: block;
+    font-family: Georgia, 'Helvetica Neue', 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4em;
+    text-decoration: none;
+}
+
+.brand a {
+    display: flex;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 700;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.project {
+    letter-spacing: 0.025em;
+    padding-bottom: 8em;
+}
+
+.project-title {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+}
+
+.project-img {
+    display: flex;
+    width: 100%;
+}
+
+.project-img img {
+    flex: 1;
+    width: 20%;
+    padding-bottom: 1em;
+}
+
+.project-img-l {
+    padding-right: 1em;
+}
+
+.project-subtitle {
+    font-family: 'Helvetica Neue';
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    margin: 0;
+}
+
+.project-img-ctr {
+    display: flex;
+    justify-content: center;
+}
+
+.project-img-ctr img {
+    width: 50%;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em 0 10em 0;
+}
+
+.footer img {
+    display: block;
+    width: 15vw;
+}
+
+.footer-credit {
+    font-size: 0.7em;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav {
+    text-decoration: overline;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 5em 0 0 0;
+}
