@@ -2,44 +2,8 @@ html, body {
     background-color: black;
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue';  
-}
-
-.page {
-    background-attachment: fixed;
-    background-image: url('../assets/FrontPage/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 1;
-    background-size: cover;
-}
-
-#bgimg {
-    display: flex;
-}
-
-#bgimg img {
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.fadeInBg {
-    animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    font-family: 'Helvetica Neue'; 
+    scroll-behavior: smooth; 
 }
 
 .main-white {
@@ -52,55 +16,4 @@ html, body {
 
 .third-dark {
     color: #161616;
-}
-
-.content {
-    height: auto;
-    padding: 3em 0 0 4em;
-    position: absolute;
-    z-index: 100;
-}
-
-.title {
-    font-size: 3em;
-    font-style: italic;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-}
-
-.section {
-    margin-top: 1em;
-    letter-spacing: 1.5px;
-}
-
-.subtitle {
-    font-size: 1.8em;
-    font-weight: 700;
-    margin: 0;
-}
-
-.sublink a {
-    color:#C5C5C5;
-    display: block;
-    font-size: 1.8em;
-    font-weight: 600;
-    margin: 0 0 0 0.8em;
-    text-decoration: none;
-}
-
-.sublink a:hover {
-    color: #767676;
-}
-
-
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    padding: 12em 0 0 2em;
-    width: 90vw;
-}
-
-.footer img {
-    width: 10em;
 }
