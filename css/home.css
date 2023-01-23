@@ -82,20 +82,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 10em 0 0 2em;
+    padding: 8em 0 0 2em;
     width: 90vw;
 }
 
 .footer img {
-    width: 10em;
-}
-
-.footer-credit {
-    font-size: 0.6em;
-    font-family: 'Helvetica Neue';
-    font-style: normal;
-    font-weight: 300;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    width: 15em;
 }

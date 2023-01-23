@@ -1,0 +1,83 @@
+.page {
+    padding: 4em 8em;
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 8em;
+}
+
+.list, .brand {
+    flex: 1;
+}
+
+.brand {
+    margin: 1em 0 0 4em;
+}
+
+#subtitle {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand a {
+    display: flex;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 700;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+#about-her, #contact {
+    display: flex;
+    margin: 4em 0;
+}
+
+#headshot, #contact-pic {
+    width: 25em;
+    height: auto;
+}
+
+.about-texts {
+    margin: 0 2em 2em 1.5em;
+}
+
+.second-title {
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 0.025em;
+    margin: 0 0 1em 0;
+}
+
+.about-text {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.contact-title {
+    margin: 1em 0 0.5em 0;
+}
+
+.contact-text {
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.025em;
+    margin: 0;
+}
+
+#resume {
+    color: #c5c5c5;
+    display: block;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 0.025em;
+    padding: 2em 0 0 0;
+    text-decoration: none;
+}
+
+#resume:hover {
+    color: #767676;
+}
