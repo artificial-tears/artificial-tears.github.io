@@ -1,20 +1,33 @@
-name: Jekyll site CI
+name: Jekyll site CI and Deploy
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+      - uses: actions/checkout@v2
+      
+      - name: Build the site in the jekyll/builder container
+        run: |
+          docker run \
+            -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+            jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name ${{ secrets.GITHUB_ACTOR }}
+          git config user.email ${{ secrets.GITHUB_ACTOR }}@users.noreply.github.com
+          git checkout gh-pages
+          git rm -r .
+          cp -r _site/* .
+          git add .
+          git commit -m "Deployed via GitHub Actions"
+          git push -f origin gh-pages
