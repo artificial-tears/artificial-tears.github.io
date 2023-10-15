@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git checkout gh-pages
+          rsync -av --delete --exclude='.git' ./ ./  # Sync all files to the gh-pages branch
+          git add -A
+          git commit -m "Deployed via GitHub Actions"
+          git push -f origin gh-pages
