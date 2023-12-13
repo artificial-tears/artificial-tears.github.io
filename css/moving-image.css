@@ -20,6 +20,17 @@
     font-size: 1.5em;
     font-weight: 700;
     text-decoration: none;
+    margin-bottom: 1.5em;
+}
+
+.work-section {
+    display: block;
+    font-family: Georgia, 'Helvetica Neue', 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.4em;
+    text-decoration: none;
+    margin: 2em 0 0 0;
 }
 
 .worktitle {
@@ -93,6 +104,14 @@
     font-size: 1em;
     font-style: normal;
     font-weight: 500;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-0-bottom {
+    margin-bottom: 0;
 }
 
 .footer {
